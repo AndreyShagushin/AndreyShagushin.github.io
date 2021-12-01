@@ -8,6 +8,9 @@
     <meta name="robots" content="all" />
 
     <meta name="og:title" content="Моя первая страница..." />
+
+    <link href="css/reset.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
     <title>Шагушин Андрей - Веб-разработчик!</title>
   </head>
   <body>
@@ -35,193 +38,195 @@
         <h4>Фулл стек Веб-разработчик</h4>
         <input type="submit" value="Обо мне" />
         <input type="submit" value="Мои работы" />
-        <img src="" alt="Тут должна быть фотка" />
       </div>
+    </div>
 
-      <div class="about_me_container">
-        <h2>Обо мне</h2>
-        <img src="" alt="Тут должна быть фотка поменьше" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-          eveniet?
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-          eveniet?
-        </p>
-        <input type="submit" value="Скачать резюме" />
-      </div>
+    <div class="about_me_container">
+      <h2>Обо мне</h2>
+      <img src="img/chb_boy.png" alt="Тут должна быть фотка поменьше" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+        error asperiores temporibus quidem ea quo, maiores molestiae, deleniti
+        veniam sequi beatae delectus porro. Nihil, et?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+        eveniet?
+      </p>
 
-      <div class="my_skill_container">
-        <h2>Что я умею</h2>
+      <input type="submit" value="Скачать резюме" />
+    </div>
+
+    <div class="my_skill_container">
+      <h2>Что я умею</h2>
+      <div class="my_skill">
         <div class="web_design_container" style="display: inline-block">
           <img src="img/my_skills/laptop.png" alt="Фото" />
           <h4>Веб-дизайн</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit?</p>
         </div>
         <div class="Development_container" style="display: inline-block">
           <img src="img/my_skills/developer.png" alt="Фото" />
           <h4>Разработка</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
         </div>
         <div class="seo_optimizer_container" style="display: inline-block">
           <img src="img/my_skills/seo.png" alt="Фото" />
           <h4>СЕО-оптимизация</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi.</p>
         </div>
         <div class="marketing_container" style="display: inline-block">
           <img src="img/my_skills/marketing.png" alt="Фото" />
           <h4>Маркетинг</h4>
-          <p>Lorem ipsum dolor sit amet.</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, perspiciatis.</p>
         </div>
       </div>
+    </div>
 
-      <div class="cases_container">
-        <h2>Кейсы</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-          eveniet?
-        </p>
-        <img src="img/cases_photo.png" alt="Тут должна быть фотка" />
-        <p>Клиент <br />Какая-то компания</p>
-        <p>Веб-сайт <br />Какой-то сайт</p>
-        <p>
-          Название проекта <br />Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Harum, aspernatur ea! Quia nihil est praesentium.
-        </p>
-        <input type="submit" value="Visit live site" />
+    <div class="cases_container">
+      <h2>Кейсы</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+        eveniet?
+      </p>
+      <img src="img/cases_photo.png" alt="Тут должна быть фотка" />
+      <p>Клиент <br />Какая-то компания</p>
+      <p>Веб-сайт <br />Какой-то сайт</p>
+      <p>
+        Название проекта <br />Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Harum, aspernatur ea! Quia nihil est praesentium.
+      </p>
+      <input type="submit" value="Visit live site" />
+    </div>
+
+    <div class="calculation_container">
+      <h2>Расчет стоимости</h2>
+
+      <h3>Тип сайта</h3>
+      <select name="type_site" id="type_site">
+        <option value="Business_card">Визитка</option>
+        <option value="Online_store">Интернет-магазин</option>
+        <option value="Online_showcase">Интренет-витрина</option>
+        <option value="Corporate">Корпоратиный</option>
+      </select>
+
+      <h3>Дизайн</h3>
+      <select name="design_site" id="design_site">
+        <option value="design_site_1">Дизайн 1</option>
+        <option value="design_site_1">Дизайн 1</option>
+        <option value="design_site_2">Дизайн 2</option>
+        <option value="design_site_3">Дизайн 3</option>
+      </select>
+
+      <h3>Адаптивности</h3>
+      <select name="adaptive_site" id="adaptive_site" multiple>
+        <option value="adaptive_site_modile">Мобильные устройства</option>
+        <option value="adaptive_site_tablet">Планшеты</option>
+        <option value="adaptive_site_some">Еще что-то</option>
+      </select>
+      <div class="deadlines">
+        <p>Сроки <span>0</span></p>
+      </div>
+      <div class="cost">
+        <p>Стоимости <span>0</span></p>
+      </div>
+    </div>
+
+    <div class="statistics_container">
+      <h2>Немного статистики</h2>
+      <div class="happy_customers_container" style="display: inline-block">
+        <img src="img/statistics/smile.png" alt="Фото" />
+        <p>120</p>
+        <h4>Счастливых клиентов</h4>
+      </div>
+      <div class="hour_work_container" style="display: inline-block">
+        <img src="img/statistics/dev.png" alt="Фото" />
+        <p>4,600</p>
+        <h4>Часов работы</h4>
+      </div>
+      <div class="projects_completed_container" style="display: inline-block">
+        <img src="img/statistics/completed.png" alt="Фото" />
+        <p>340</p>
+        <h4>Проектов завершено</h4>
+      </div>
+      <div class="prize_container" style="display: inline-block">
+        <img src="img/statistics/cup.png" alt="Фото" />
+        <p>23</p>
+        <h4>Наград получено</h4>
+      </div>
+    </div>
+
+    <div class="feedback_container">
+      <h2>Отзывы</h2>
+      <img src="" alt="Тут должна быть фотка" />
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+        eveniet?
+      </p>
+      <p>Имя, компания</p>
+    </div>
+
+    <div class="contacts_container">
+      <h2>Мои контакты</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+        eveniet?
+      </p>
+      <div class="my_addres_container" style="display: inline-block">
+        <img src="img/my_contacts/geo.png" alt="Фото" />
+        <p>Мой адрес</p>
+      </div>
+      <div class="my_email_container" style="display: inline-block">
+        <img src="img/my_contacts/email.png" alt="Фото" />
+        <p>Моя почта</p>
+      </div>
+      <div class="my_phone_container" style="display: inline-block">
+        <img src="img/my_contacts/phone.png" alt="Фото" />
+        <p>Мой номер телефона</p>
       </div>
 
-      <div class="calculation_container">
-        <h2>Расчет стоимости</h2>
+      <h2>Оставьте мне сообщение</h2>
+      <input type="text" placeholder="Имя" />
+      <input type="email" placeholder="Email" />
+      <br />
+      <textarea
+        name="messages"
+        id="messages"
+        cols="50"
+        rows="5"
+        placeholder="Сообщение"
+      ></textarea>
+      <input type="submit" value="Отправить" />
+      <br />
+      <a
+        href="#vk"
+        onclick="window.open('https://vk.com/share.php?url='+ window.location.href +'')"
+        >ВКонтакте</a
+      >
+      <a
+        href="#ok"
+        onclick="window.open('https://connect.ok.ru/offer?url='+ window.location.href +'')"
+        >Одноклассники</a
+      >
+      <a
+        href="#facebook"
+        onclick="window.open('https://www.facebook.com/sharer.php?src=sp&u='+ window.location.href +'')"
+        >Facebook</a
+      >
+      <a
+        href="#twitter"
+        onclick="window.open('https://twitter.com/intent/tweet?url='+ window.location.href +'')"
+        >Twitter</a
+      >
+    </div>
 
-        <h3>Тип сайта</h3>
-        <select name="type_site" id="type_site">
-          <option value="Business_card">Визитка</option>
-          <option value="Online_store">Интернет-магазин</option>
-          <option value="Online_showcase">Интренет-витрина</option>
-          <option value="Corporate">Корпоратиный</option>
-        </select>
-
-        <h3>Дизайн</h3>
-        <select name="design_site" id="design_site">
-          <option value="design_site_1">Дизайн 1</option>
-          <option value="design_site_1">Дизайн 1</option>
-          <option value="design_site_2">Дизайн 2</option>
-          <option value="design_site_3">Дизайн 3</option>
-        </select>
-
-        <h3>Адаптивности</h3>
-        <select name="adaptive_site" id="adaptive_site" multiple>
-          <option value="adaptive_site_modile">Мобильные устройства</option>
-          <option value="adaptive_site_tablet">Планшеты</option>
-          <option value="adaptive_site_some">Еще что-то</option>
-        </select>
-        <div class="deadlines">
-          <p>Сроки <span>0</span></p>
-          
-        </div>
-        <div class="cost">
-            <p>Стоимости <span>0</span></p>
-        </div>
-      </div>
-
-      <div class="statistics_container">
-        <h2>Немного статистики</h2>
-        <div class="happy_customers_container" style="display: inline-block">
-          <img src="img/statistics/smile.png" alt="Фото" />
-          <p>120</p>
-          <h4>Счастливых клиентов</h4>
-        </div>
-        <div class="hour_work_container" style="display: inline-block">
-          <img src="img/statistics/dev.png" alt="Фото" />
-          <p>4,600</p>
-          <h4>Часов работы</h4>
-        </div>
-        <div class="projects_completed_container" style="display: inline-block">
-          <img src="img/statistics/completed.png" alt="Фото" />
-          <p>340</p>
-          <h4>Проектов завершено</h4>
-        </div>
-        <div class="prize_container" style="display: inline-block">
-          <img src="img/statistics/cup.png" alt="Фото" />
-          <p>23</p>
-          <h4>Наград получено</h4>
-        </div>
-      </div>
-
-      <div class="feedback_container">
-        <h2>Отзывы</h2>
-        <img src="" alt="Тут должна быть фотка" />
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-          eveniet?
-        </p>
-        <p>Имя, компания</p>
-      </div>
-
-      <div class="contacts_container">
-        <h2>Мои контакты</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-          eveniet?
-        </p>
-        <div class="my_addres_container" style="display: inline-block">
-          <img src="img/my_contacts/geo.png" alt="Фото" />
-          <p>Мой адрес</p>
-        </div>
-        <div class="my_email_container" style="display: inline-block">
-          <img src="img/my_contacts/email.png" alt="Фото" />
-          <p>Моя почта</p>
-        </div>
-        <div class="my_phone_container" style="display: inline-block">
-          <img src="img/my_contacts/phone.png" alt="Фото" />
-          <p>Мой номер телефона</p>
-        </div>
-
-        <h2>Оставьте мне сообщение</h2>
-        <input type="text" placeholder="Имя" />
-        <input type="email" placeholder="Email" />
-        <br />
-        <textarea
-          name="messages"
-          id="messages"
-          cols="50"
-          rows="5"
-          placeholder="Сообщение"
-        ></textarea>
-        <input type="submit" value="Отправить" />
-        <br />
-        <a
-          href="#vk"
-          onclick="window.open('https://vk.com/share.php?url='+ window.location.href +'')"
-          >ВКонтакте</a
-        >
-        <a
-          href="#ok"
-          onclick="window.open('https://connect.ok.ru/offer?url='+ window.location.href +'')"
-          >Одноклассники</a
-        >
-        <a
-          href="#facebook"
-          onclick="window.open('https://www.facebook.com/sharer.php?src=sp&u='+ window.location.href +'')"
-          >Facebook</a
-        >
-        <a
-          href="#twitter"
-          onclick="window.open('https://twitter.com/intent/tweet?url='+ window.location.href +'')"
-          >Twitter</a
-        >
-      </div>
-
-      <div class="maps">
-        <script
-          type="text/javascript"
-          charset="utf-8"
-          async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-        ></script>
-      </div>
+    <div class="maps">
+      <script
+        type="text/javascript"
+        charset="utf-8"
+        async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
+      ></script>
     </div>
   </body>
 </html>
