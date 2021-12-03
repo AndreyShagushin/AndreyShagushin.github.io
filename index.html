@@ -25,7 +25,7 @@
             <li>Прайс</li>
             <li>Отзывы</li>
             <li>Контакты</li>
-          </ul>
+          </uж>
         </div>
       </nav>
     </header>
@@ -85,23 +85,49 @@
 
     <div class="cases_container">
       <h2>Кейсы</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-        eveniet?
-      </p>
-      <img src="img/cases_photo.png" alt="Тут должна быть фотка" />
-      <p>Клиент <br />Какая-то компания</p>
-      <p>Веб-сайт <br />Какой-то сайт</p>
-      <p>
-        Название проекта <br />Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Harum, aspernatur ea! Quia nihil est praesentium.
-      </p>
-      <input type="submit" value="Visit live site" />
+      <div class="cases_description">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+          eveniet?
+        </p>
+      </div>
+      <div class="clients">
+        <img src="img/cases_photo.png" alt="Тут должна быть фотка" />
+        
+          <div class="client_name_web">
+            <div class="cases_client">
+              <h3>
+                Клиент
+             </h3>
+             <p>Какой-то клиент</p>
+           </div>
+          
+            <div class="cases_web">
+             <h3>
+               Веб-сайт
+             </h3>
+              <p>Какой-то сайт</p>
+            </div>
+          </div>
+          <div class="cases_name_project">
+            <h3>
+              Название проекта
+            </h3>
+           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magni architecto nam in esse ducimus praesentium tenetur vel id soluta illo, cupiditate qui unde doloremque inventore incidunt numquam veniam voluptatibus.</p> 
+          </div>
+          <input type="submit" value="Visit live site" />
+        
+        
+      </div>
+    </div>
+      
+      
+      
     </div>
 
     <div class="calculation_container">
       <h2>Расчет стоимости</h2>
-
+      <div class="calculation">
       <h3>Тип сайта</h3>
       <select name="type_site" id="type_site">
         <option value="Business_card">Визитка</option>
@@ -124,6 +150,9 @@
         <option value="adaptive_site_tablet">Планшеты</option>
         <option value="adaptive_site_some">Еще что-то</option>
       </select>
+      
+    </div>
+    <div class="price">
       <div class="deadlines">
         <p>Сроки <span>0</span></p>
       </div>
@@ -131,9 +160,14 @@
         <p>Стоимости <span>0</span></p>
       </div>
     </div>
+    
+  </div>
 
     <div class="statistics_container">
       <h2>Немного статистики</h2>
+      <div class="my_statictic">
+
+      
       <div class="happy_customers_container" style="display: inline-block">
         <img src="img/statistics/smile.png" alt="Фото" />
         <p>120</p>
@@ -155,15 +189,15 @@
         <h4>Наград получено</h4>
       </div>
     </div>
+    </div>
 
     <div class="feedback_container">
       <h2>Отзывы</h2>
-      <img src="" alt="Тут должна быть фотка" />
+      <img src="img/fb_foto.png" alt="Тут должна быть фотка" />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-        eveniet?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio cupiditate amet mollitia sequi asperiores. Doloremque quod accusantium neque quibusdam consectetur corrupti eius provident ut.
       </p>
-      <p>Имя, компания</p>
+      <p><strong>Имя</strong>, компания</p>
     </div>
 
     <div class="contacts_container">
@@ -185,7 +219,7 @@
         <p>Мой номер телефона</p>
       </div>
 
-      <h2>Оставьте мне сообщение</h2>
+      <h3>Оставьте мне сообщение</h3>
       <input type="text" placeholder="Имя" />
       <input type="email" placeholder="Email" />
       <br />
