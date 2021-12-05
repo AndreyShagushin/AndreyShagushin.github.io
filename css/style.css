@@ -209,6 +209,7 @@ nav {
 }
 
 .cases_container input{
+    float: left;
     text-align: center;
     font-size: 20px;
     color: white;
@@ -218,6 +219,10 @@ nav {
     border-radius: 5px;
     padding: 0px 15px;
     margin-top: 25px;
+}
+
+.cases_container .clear{
+    clear: both;
 }
 
 
