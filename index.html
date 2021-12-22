@@ -1,64 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Моя первая страница..." />
-    <meta name="author" content="AndreySha" />
-    <meta name="robots" content="all" />
 
-    <meta name="og:title" content="Моя первая страница..." />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Моя первая страница..." />
+  <meta name="author" content="AndreySha" />
+  <meta name="robots" content="all" />
 
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+  <meta name="og:title" content="Моя первая страница..." />
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  
+  <link rel="stylesheet" href="css/reset.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 
   <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  
+
   <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
-  
-  
-    <title>Шагушин Андрей - Веб-разработчик!</title>
-  </head>
-  <body>
 
-    <div class="loader">
-      <div class="loader_inner"></div>
-    </div>
 
-    <header>
-      <nav>
-        <div class="logo animate__animated animate__backInLeft">Андрей Шагушин</div>
-        <div class="menu">
-          <ul>
-            <li><a href="#"> Обо мне</a></li>
-            <li><a href="#">Услуги</a></li>
-            <li><a href="#">Кейсы</a></li>
-            <li><a href="#">Прайс</a></li>
-            <li><a href="#">Отзывы</a></li>
-            <li><a href="#">Контакты</a></li>
-          </uж>
+  <title>Шагушин Андрей - Веб-разработчик!</title>
+</head>
+
+<body>
+
+  <div class="loader">
+    <div class="loader_inner"></div>
+  </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg ">
+      <div class="menu container">
+        <div class="logo navbar-brand   animate__animated animate__backInLeft" href="#">Андрей Шагушин</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          Меню
+        </button>
+        <div class="collapse navbar-collapse offset-lg-0 offset-xl-2" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Обо мне</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Услуги</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Кейсы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Прайс</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
-    <div class="main">
-      <div class="title_container">
-        <h1>
-          Привет <br />
-          Я Андрей Шагушин
-        </h1>
-        <h4>Фулл стек Веб-разработчик</h4>
-        <input type="button" id="about_my_btn" value="Обо мне" />
-        <input type="button" id="my_work_my" value="Мои работы" />
+      </div>
+    </nav>
+
+  </header>
+  <div class="main">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center col-lg-6 pt-5" >
+
+
+          <div class="title_container mt-5 pt-5">
+            <h1>
+              Привет <br />
+              Я Андрей Шагушин
+            </h1>
+            <h4>Фулл стек Веб-разработчик</h4>
+            <input type="button" id="about_my_btn" value="Обо мне" />
+            <input type="button" id="my_work_my" value="Мои работы" />
+          </div>
       </div>
     </div>
-
+  </div>
     <div class="about_me_container">
       <h2>Обо мне</h2>
       <img src="img/chb_boy.png" alt="Тут должна быть фотка поменьше" />
@@ -111,108 +135,111 @@
       </div>
       <div class="clients">
         <img src="img/cases_photo.png" alt="Тут должна быть фотка" />
-        
-          <div class="client_name_web">
-            <div class="cases_client">
-              <h3>
-                Клиент
-             </h3>
-             <p>Какой-то клиент</p>
-           </div>
-          
-            <div class="cases_web">
-             <h3>
-               Веб-сайт
-             </h3>
-              <p>Какой-то сайт</p>
-            </div>
-          </div>
-          <div class="cases_name_project">
+
+        <div class="client_name_web">
+          <div class="cases_client">
             <h3>
-              Название проекта
+              Клиент
             </h3>
-           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magni architecto nam in esse ducimus praesentium tenetur vel id soluta illo, cupiditate qui unde doloremque inventore incidunt numquam veniam voluptatibus.</p> 
+            <p>Какой-то клиент</p>
           </div>
-          <div class="clear"></div>
-          <input type="submit" value="Visit live site" />
+
+          <div class="cases_web">
+            <h3>
+              Веб-сайт
+            </h3>
+            <p>Какой-то сайт</p>
+          </div>
+        </div>
+        <div class="cases_name_project">
+          <h3>
+            Название проекта
+          </h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magni architecto nam in esse ducimus
+            praesentium tenetur vel id soluta illo, cupiditate qui unde doloremque inventore incidunt numquam veniam
+            voluptatibus.</p>
+        </div>
+        <div class="clear"></div>
+        <input type="submit" value="Visit live site" />
       </div>
-      
+
     </div>
-      
-      
-      
+
+
+
 
     <div class="calculation_container">
       <h2>Расчет стоимости</h2>
       <div class="calculation">
-      <h3>Тип сайта</h3>
-      <select name="type_site" id="type_site">
-        <option value="Business_card">Визитка</option>
-        <option value="Online_store">Интернет-магазин</option>
-        <option value="Online_showcase">Интренет-витрина</option>
-        <option value="Corporate">Корпоратиный</option>
-      </select>
+        <h3>Тип сайта</h3>
+        <select name="type_site" id="type_site">
+          <option value="Business_card">Визитка</option>
+          <option value="Online_store">Интернет-магазин</option>
+          <option value="Online_showcase">Интренет-витрина</option>
+          <option value="Corporate">Корпоратиный</option>
+        </select>
 
-      <h3>Дизайн</h3>
-      <select name="design_site" id="design_site">
-        <option value="design_site_1">Дизайн 1</option>
-        <option value="design_site_1">Дизайн 1</option>
-        <option value="design_site_2">Дизайн 2</option>
-        <option value="design_site_3">Дизайн 3</option>
-      </select>
+        <h3>Дизайн</h3>
+        <select name="design_site" id="design_site">
+          <option value="design_site_1">Дизайн 1</option>
+          <option value="design_site_1">Дизайн 1</option>
+          <option value="design_site_2">Дизайн 2</option>
+          <option value="design_site_3">Дизайн 3</option>
+        </select>
 
-      <h3>Адаптивности</h3>
-      <select name="adaptive_site" id="adaptive_site" multiple>
-        <option value="adaptive_site_modile">Мобильные устройства</option>
-        <option value="adaptive_site_tablet">Планшеты</option>
-        <option value="adaptive_site_some">Еще что-то</option>
-      </select>
-      
-    </div>
-    <div class="price">
-      <div class="deadlines">
-        <p>Сроки <span>0</span></p>
+        <h3>Адаптивности</h3>
+        <select name="adaptive_site" id="adaptive_site" multiple>
+          <option value="adaptive_site_modile">Мобильные устройства</option>
+          <option value="adaptive_site_tablet">Планшеты</option>
+          <option value="adaptive_site_some">Еще что-то</option>
+        </select>
+
       </div>
-      <div class="cost">
-        <p>Стоимости <span>0</span></p>
+      <div class="price">
+        <div class="deadlines">
+          <p>Сроки <span>0</span></p>
+        </div>
+        <div class="cost">
+          <p>Стоимости <span>0</span></p>
+        </div>
       </div>
+
     </div>
-    
-  </div>
 
     <div class="statistics_container">
       <h2>Немного статистики</h2>
       <div class="my_statictic">
 
-      
-      <div class="happy_customers_container" style="display: inline-block">
-        <img src="img/statistics/smile.png" alt="Фото" />
-        <p>120</p>
-        <h4>Счастливых клиентов</h4>
+
+        <div class="happy_customers_container" style="display: inline-block">
+          <img src="img/statistics/smile.png" alt="Фото" />
+          <p>120</p>
+          <h4>Счастливых клиентов</h4>
+        </div>
+        <div class="hour_work_container" style="display: inline-block">
+          <img src="img/statistics/dev.png" alt="Фото" />
+          <p>4,600</p>
+          <h4>Часов работы</h4>
+        </div>
+        <div class="projects_completed_container" style="display: inline-block">
+          <img src="img/statistics/completed.png" alt="Фото" />
+          <p>340</p>
+          <h4>Проектов завершено</h4>
+        </div>
+        <div class="prize_container" style="display: inline-block">
+          <img src="img/statistics/cup.png" alt="Фото" />
+          <p>23</p>
+          <h4>Наград получено</h4>
+        </div>
       </div>
-      <div class="hour_work_container" style="display: inline-block">
-        <img src="img/statistics/dev.png" alt="Фото" />
-        <p>4,600</p>
-        <h4>Часов работы</h4>
-      </div>
-      <div class="projects_completed_container" style="display: inline-block">
-        <img src="img/statistics/completed.png" alt="Фото" />
-        <p>340</p>
-        <h4>Проектов завершено</h4>
-      </div>
-      <div class="prize_container" style="display: inline-block">
-        <img src="img/statistics/cup.png" alt="Фото" />
-        <p>23</p>
-        <h4>Наград получено</h4>
-      </div>
-    </div>
     </div>
 
     <div class="feedback_container">
       <h2>Отзывы</h2>
       <img src="img/fb_foto.png" alt="Тут должна быть фотка" />
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio cupiditate amet mollitia sequi asperiores. Doloremque quod accusantium neque quibusdam consectetur corrupti eius provident ut.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio cupiditate amet mollitia sequi asperiores.
+        Doloremque quod accusantium neque quibusdam consectetur corrupti eius provident ut.
       </p>
       <p><strong>Имя</strong>, компания</p>
     </div>
@@ -224,48 +251,44 @@
         eveniet?
       </p>
 
-     <div class="my_cont">
-      <div class="my_addres_container" style="display: inline-block">
-        <img src="img/my_contacts/geo.png" alt="Фото" />
-        <p>Владимир, Владмирская, 36</p>
+      <div class="my_cont">
+        <div class="my_addres_container" style="display: inline-block">
+          <img src="img/my_contacts/geo.png" alt="Фото" />
+          <p>Владимир, Владмирская, 36</p>
+        </div>
+        <div class="my_email_container" style="display: inline-block">
+          <img src="img/my_contacts/email.png" alt="Фото" />
+          <p>testemail@yandex.ru</p>
+        </div>
+        <div class="my_phone_container" style="display: inline-block">
+          <img src="img/my_contacts/phone.png" alt="Фото" />
+          <p>+7-999-888-77-66</p>
+        </div>
       </div>
-      <div class="my_email_container" style="display: inline-block" >
-        <img src="img/my_contacts/email.png" alt="Фото" />
-        <p>testemail@yandex.ru</p>
-      </div>
-      <div class="my_phone_container" style="display: inline-block">
-        <img src="img/my_contacts/phone.png" alt="Фото" />
-        <p>+7-999-888-77-66</p>
-      </div>
-    </div>
       <h4>Оставьте мне сообщение</h4>
       <div>
-      <input type="text" placeholder="Имя" />
-      <input type="email" placeholder="Email" />
-      
-      <textarea
-        name="messages"
-        id="messages"
-        placeholder="Сообщение"
-      ></textarea>
-    </div>
+        <input type="text" placeholder="Имя" />
+        <input type="email" placeholder="Email" />
+
+        <textarea name="messages" id="messages" placeholder="Сообщение"></textarea>
+      </div>
       <input type="submit" value="Отправить" />
       <br />
       <script src="https://yastatic.net/share2/share.js"></script>
-<div class="ya-share2" data-curtain data-size="l" data-shape="round" data-services="vkontakte,facebook,telegram,viber,whatsapp"></div></div>
+      <div class="ya-share2" data-curtain data-size="l" data-shape="round"
+        data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
+    </div>
 
     <div class="maps">
-      <script
-        type="text/javascript"
-        charset="utf-8"
-        async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"
-      ></script>
+      <script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"></script>
 
-    
-  </body>
-  
+</body>
+
 </html>
