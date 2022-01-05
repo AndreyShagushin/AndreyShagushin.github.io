@@ -13,14 +13,13 @@
   <link rel="stylesheet" href="css/reset.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css">
   <link rel="stylesheet" href="css/style.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
 
-
-  <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-  <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
 
 
   <title>Шагушин Андрей - Веб-разработчик!</title>
@@ -32,33 +31,37 @@
     <div class="loader_inner"></div>
   </div>
 
+
   <header>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg" id="navbar-example2">
       <div class="menu container">
-        <div class="logo navbar-brand   animate__animated animate__backInLeft" href="#">Андрей Шагушин</div>
+        <a class="logo navbar-brand   animate__animated animate__backInLeft" href="#me">Андрей Шагушин</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           Меню
         </button>
-        <div class="collapse navbar-collapse offset-lg-0 offset-xl-2" id="navbarNav">
+        <div class="collapse navbar-collapse offset-lg-0 offset-xl-2 " id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#">Обо мне</a>
+              <a class="nav-link " href="#about_me">Обо мне</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Услуги</a>
+              <a class="nav-link" href="#my_skill">Навыки</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Кейсы</a>
+              <a class="nav-link" href="#cases">Кейсы</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Прайс</a>
+              <a class="nav-link" href="#calculation">Прайс</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Отзывы</a>
+              <a class="nav-link" href="#statistics">Статистика</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#feedback">Отзывы</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Контакты</a>
             </li>
           </ul>
         </div>
@@ -66,75 +69,114 @@
     </nav>
 
   </header>
-  <div class="main">
+
+  <div class="main section" id="me">
     <div class="container h-100">
-        <div class="row h-100 align-items-center col-lg-6 pt-5" >
+      <div class="row h-100 align-items-center col-lg-6 pt-5">
 
 
-          <div class="title_container mt-5 pt-5">
-            <h1>
-              Привет <br />
-              Я Андрей Шагушин
-            </h1>
-            <h4>Фулл стек Веб-разработчик</h4>
-            <input type="button" id="about_my_btn" value="Обо мне" />
-            <input type="button" id="my_work_my" value="Мои работы" />
-          </div>
+        <div class="title_container mt-5 pt-5">
+          <h1>
+            Привет <br />
+            Я Андрей Шагушин
+          </h1>
+          <h4>Фулл стек Веб-разработчик</h4>
+          <input type="button" id="about_my_btn" value="Обо мне" />
+          <input type="button" id="my_work_my" value="Мои работы" />
+        </div>
       </div>
     </div>
   </div>
-    <div class="about_me_container">
-      <h2>Обо мне</h2>
-      <img src="img/chb_boy.png" alt="Тут должна быть фотка поменьше" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
-        error asperiores temporibus quidem ea quo, maiores molestiae, deleniti
-        veniam sequi beatae delectus porro. Nihil, et?
-      </p>
+  <div class="about_me_container" id="about_me">
+    <h2>Обо мне</h2>
+    <img src="img/chb_boy.png" alt="Тут должна быть фотка поменьше" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+      error asperiores temporibus quidem ea quo, maiores molestiae, deleniti
+      veniam sequi beatae delectus porro. Nihil, et?
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+      eveniet?
+    </p>
+
+    <input type="button" value="Скачать резюме" />
+  </div>
+
+  <div class="my_skill_container section" id="my_skill">
+    <h2>Что я умею</h2>
+    <div class="my_skill">
+      <div class="web_design_container" style="display: inline-block">
+        <img src="img/my_skills/laptop.png" alt="Фото" />
+        <h4>Веб-дизайн</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit?</p>
+      </div>
+      <div class="Development_container" style="display: inline-block">
+        <img src="img/my_skills/developer.png" alt="Фото" />
+        <h4>Разработка</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
+      </div>
+      <div class="seo_optimizer_container" style="display: inline-block">
+        <img src="img/my_skills/seo.png" alt="Фото" />
+        <h4>СЕО-оптимизация</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi.</p>
+      </div>
+      <div class="marketing_container" style="display: inline-block">
+        <img src="img/my_skills/marketing.png" alt="Фото" />
+        <h4>Маркетинг</h4>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, perspiciatis.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="cases_container section" id="cases">
+    <h2>Кейсы</h2>
+    <div class="cases_description">
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
         eveniet?
       </p>
-
-      <input type="button" value="Скачать резюме" />
     </div>
+    <div class="clients">
+      <div class="clint_one">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-dark" data-bs-ride="carousel"
+          data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/cases_photo1.1.png" class="d-block w-100 image-link" alt="1.1"
+                href="img/cases_photo1.1.png">
+            </div>
+            <div class="carousel-item">
+              <img src="img/cases_photo1.2.png" class="d-block w-100 image-link" alt="1.2"
+                href="img/cases_photo1.2.png">
+            </div>
+            <div class="carousel-item">
+              <img src="img/cases_photo1.3.png" class="d-block w-100 image-link" alt="1.3"
+                href="img/cases_photo1.3.png">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
 
-    <div class="my_skill_container">
-      <h2>Что я умею</h2>
-      <div class="my_skill">
-        <div class="web_design_container" style="display: inline-block">
-          <img src="img/my_skills/laptop.png" alt="Фото" />
-          <h4>Веб-дизайн</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit?</p>
-        </div>
-        <div class="Development_container" style="display: inline-block">
-          <img src="img/my_skills/developer.png" alt="Фото" />
-          <h4>Разработка</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
-        </div>
-        <div class="seo_optimizer_container" style="display: inline-block">
-          <img src="img/my_skills/seo.png" alt="Фото" />
-          <h4>СЕО-оптимизация</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi.</p>
-        </div>
-        <div class="marketing_container" style="display: inline-block">
-          <img src="img/my_skills/marketing.png" alt="Фото" />
-          <h4>Маркетинг</h4>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, perspiciatis.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="cases_container">
-      <h2>Кейсы</h2>
-      <div class="cases_description">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-          eveniet?
-        </p>
-      </div>
-      <div class="clients">
-        <img src="img/cases_photo.png" alt="Тут должна быть фотка" />
 
         <div class="client_name_web">
           <div class="cases_client">
@@ -155,7 +197,72 @@
           <h3>
             Название проекта
           </h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magni architecto nam in esse ducimus
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magni architecto nam in esse
+            ducimus
+            praesentium tenetur vel id soluta illo, cupiditate qui unde doloremque inventore incidunt numquam veniam
+            voluptatibus.</p>
+        </div>
+        <div class="clear"></div>
+        <input type="submit" value="Visit live site" />
+      </div>
+      <div class="clint_two">
+        <div id="carouselExampleIndicators_1" class="carousel slide carousel-dark" data-bs-ride="carousel"
+          data-bs-touch="false" data-bs-interval="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators_1" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators_1" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators_1" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/cases_photo2.1.png" class="d-block w-100 image-link" alt="2.1"
+                href="img/cases_photo2.1.png">
+            </div>
+            <div class="carousel-item">
+              <img src="img/cases_photo2.2.png" class="d-block w-100 image-link" alt="2.2"
+                href="img/cases_photo2.2.png">
+            </div>
+            <div class="carousel-item">
+              <img src="img/cases_photo2.3.png" class="d-block w-100 image-link" alt="2.3"
+                href="img/cases_photo2.3.png">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators_1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <div class="client_name_web">
+          <div class="cases_client">
+            <h3>
+              Клиент
+            </h3>
+            <p>Какой-то клиент</p>
+          </div>
+
+          <div class="cases_web">
+            <h3>
+              Веб-сайт
+            </h3>
+            <p>Какой-то сайт</p>
+          </div>
+        </div>
+        <div class="cases_name_project">
+          <h3>
+            Название проекта
+          </h3>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae magni architecto nam in esse
+            ducimus
             praesentium tenetur vel id soluta illo, cupiditate qui unde doloremque inventore incidunt numquam veniam
             voluptatibus.</p>
         </div>
@@ -165,129 +272,168 @@
 
     </div>
 
+  </div>
 
 
 
-    <div class="calculation_container">
-      <h2>Расчет стоимости</h2>
-      <div class="calculation">
-        <h3>Тип сайта</h3>
-        <select name="type_site" id="type_site">
-          <option value="Business_card">Визитка</option>
-          <option value="Online_store">Интернет-магазин</option>
-          <option value="Online_showcase">Интренет-витрина</option>
-          <option value="Corporate">Корпоратиный</option>
-        </select>
 
-        <h3>Дизайн</h3>
-        <select name="design_site" id="design_site">
-          <option value="design_site_1">Дизайн 1</option>
-          <option value="design_site_1">Дизайн 1</option>
-          <option value="design_site_2">Дизайн 2</option>
-          <option value="design_site_3">Дизайн 3</option>
-        </select>
+  <div class="calculation_container section" id="calculation">
+    <h2>Расчет стоимости</h2>
+    <div class="calculation">
+      <h3>Тип сайта</h3>
+      <select name="type_site" id="type_site">
+        <option hidden>Выберите тип сайта</option>
+      </select>
 
-        <h3>Адаптивности</h3>
-        <select name="adaptive_site" id="adaptive_site" multiple>
-          <option value="adaptive_site_modile">Мобильные устройства</option>
-          <option value="adaptive_site_tablet">Планшеты</option>
-          <option value="adaptive_site_some">Еще что-то</option>
-        </select>
+      <h3>Дизайн</h3>
+      <select name="design_site" id="design_site">
+        <option hidden>Выберите дизайн сайта</option>
+      </select>
 
-      </div>
-      <div class="price">
-        <div class="deadlines">
-          <p>Сроки <span>0</span></p>
-        </div>
-        <div class="cost">
-          <p>Стоимости <span>0</span></p>
-        </div>
-      </div>
+      <h3>Адаптивности</h3>
+      <select name="adaptive_site" id="adaptive_site">
+        <option hidden>Выберите адаптивность сайта</option>
+      </select>
+      <h3>Сроки создания сайта</h3>
+      <select name="deadlines_site" id="deadlines_site">
+        <option hidden>Выберите сроки создания сайта</option>
+      </select>
 
     </div>
-
-    <div class="statistics_container">
-      <h2>Немного статистики</h2>
-      <div class="my_statictic">
-
-
-        <div class="happy_customers_container" style="display: inline-block">
-          <img src="img/statistics/smile.png" alt="Фото" />
-          <p>120</p>
-          <h4>Счастливых клиентов</h4>
-        </div>
-        <div class="hour_work_container" style="display: inline-block">
-          <img src="img/statistics/dev.png" alt="Фото" />
-          <p>4,600</p>
-          <h4>Часов работы</h4>
-        </div>
-        <div class="projects_completed_container" style="display: inline-block">
-          <img src="img/statistics/completed.png" alt="Фото" />
-          <p>340</p>
-          <h4>Проектов завершено</h4>
-        </div>
-        <div class="prize_container" style="display: inline-block">
-          <img src="img/statistics/cup.png" alt="Фото" />
-          <p>23</p>
-          <h4>Наград получено</h4>
-        </div>
+    <div class="price">
+      <div class="deadlines">
+        <p>Сроки <span id="deadlines_id">0</span></p>
+      </div>
+      <div class="cost">
+        <p>Стоимости <span id="cost_id">0</span></p>
       </div>
     </div>
 
-    <div class="feedback_container">
-      <h2>Отзывы</h2>
-      <img src="img/fb_foto.png" alt="Тут должна быть фотка" />
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio cupiditate amet mollitia sequi asperiores.
-        Doloremque quod accusantium neque quibusdam consectetur corrupti eius provident ut.
-      </p>
-      <p><strong>Имя</strong>, компания</p>
+  </div>
+
+  <div class="statistics_container section" id="statistics">
+    <h2>Немного статистики</h2>
+    <div class="my_statictic">
+
+
+      <div class="happy_customers_container" style="display: inline-block">
+        <img src="img/statistics/smile.png" alt="Фото" />
+        <p class="spincrement">120</p>
+        <h4>Счастливых клиентов</h4>
+      </div>
+      <div class="hour_work_container" style="display: inline-block">
+        <img src="img/statistics/dev.png" alt="Фото" />
+        <p class="spincrement">4600</p>
+        <h4>Часов работы</h4>
+      </div>
+      <div class="projects_completed_container" style="display: inline-block">
+        <img src="img/statistics/completed.png" alt="Фото" />
+        <p class="spincrement">340</p>
+        <h4>Проектов завершено</h4>
+      </div>
+      <div class="prize_container" style="display: inline-block">
+        <img src="img/statistics/cup.png" alt="Фото" />
+        <p class="spincrement">23</p>
+        <h4>Наград получено</h4>
+      </div>
     </div>
+  </div>
 
-    <div class="contacts_container">
-      <h2>Мои контакты</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
-        eveniet?
-      </p>
+  <div class="feedback_container section" id="feedback">
+    <h2>Отзывы</h2>
+    <img src="img/fb_foto.png" alt="Тут должна быть фотка" />
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio cupiditate amet mollitia sequi asperiores.
+      Doloremque quod accusantium neque quibusdam consectetur corrupti eius provident ut.
+    </p>
+    <p><strong>Имя</strong>, компания</p>
+  </div>
 
-      <div class="my_cont">
-        <div class="my_addres_container" style="display: inline-block">
-          <img src="img/my_contacts/geo.png" alt="Фото" />
-          <p>Владимир, Владмирская, 36</p>
-        </div>
-        <div class="my_email_container" style="display: inline-block">
-          <img src="img/my_contacts/email.png" alt="Фото" />
-          <p>testemail@yandex.ru</p>
-        </div>
-        <div class="my_phone_container" style="display: inline-block">
-          <img src="img/my_contacts/phone.png" alt="Фото" />
-          <p>+7-999-888-77-66</p>
+  <div class="contacts_container section" id="contacts">
+    <h2>Мои контакты</h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
+      eveniet?
+    </p>
+
+    <div class="my_cont">
+      <div class="my_addres_container" style="display: inline-block">
+        <img src="img/my_contacts/geo.png" alt="Фото" />
+        <p>Владимир, Владмирская, 36</p>
+      </div>
+      <div class="my_email_container" style="display: inline-block">
+        <img src="img/my_contacts/email.png" alt="Фото" />
+        <p>testemail@yandex.ru</p>
+      </div>
+      <div class="my_phone_container" style="display: inline-block">
+        <img src="img/my_contacts/phone.png" alt="Фото" />
+        <p>+7-999-888-77-66</p>
+      </div>
+    </div>
+    <h4>Оставьте мне сообщение</h4>
+    <div>
+      <input type="text" placeholder="Имя" required/>
+      <input type="email" placeholder="Email" required />
+
+      <textarea name="messages" id="messages" placeholder="Сообщение" required></textarea>
+     
+    </div>
+    <!-- Button trigger modal -->
+    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Отправить
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Отправка обращения</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            Ваше письмо отправлено
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="feedback_ok">Окей</button>
+          </div>
         </div>
       </div>
-      <h4>Оставьте мне сообщение</h4>
-      <div>
-        <input type="text" placeholder="Имя" />
-        <input type="email" placeholder="Email" />
-
-        <textarea name="messages" id="messages" placeholder="Сообщение"></textarea>
-      </div>
-      <input type="submit" value="Отправить" />
-      <br />
-      <script src="https://yastatic.net/share2/share.js"></script>
-      <div class="ya-share2" data-curtain data-size="l" data-shape="round"
-        data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
-    </div>
-
-    <div class="maps">
-      <script type="text/javascript" charset="utf-8" async
-        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
     </div>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"></script>
+
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <div class="ya-share2" data-curtain data-size="l" data-shape="round"
+      data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
+  </div>
+
+  <div class="maps section">
+    <script type="text/javascript" charset="utf-8" async
+      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery.spincrement.min.js"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
+
+
+
 
 </body>
 
