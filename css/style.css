@@ -365,6 +365,11 @@ body {
   width: 100%;
 }
 
+.cases_container .carousel-control-next, .carousel-control-prev{
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
 
 
 
