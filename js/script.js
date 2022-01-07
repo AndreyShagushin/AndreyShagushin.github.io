@@ -26,10 +26,13 @@ $(document).ready(function () {
             });
         }
     });
+
+    
+    
+
     let option = {
         threshold: 1.0
     }
-
     let observer = new IntersectionObserver(onEntry, option);
     let elemetn = $(".my_statictic");
     elemetn.each((i, el) => {
@@ -40,6 +43,8 @@ $(document).ready(function () {
 
     $('.clients').slick({
       });
+
+    
 
 });
 
@@ -160,7 +165,11 @@ document.getElementById("feedback_ok").addEventListener("click", ()=> {
     alert("Ваше письмо отправлено");
 });
 
-document.getElementById
+$('.menu li a').on('click', ()=>{
+    if($('.navbar-collapse').hasClass("show")){
+        $('.navbar-collapse').removeClass("show");
+    }
+});
 
 
 

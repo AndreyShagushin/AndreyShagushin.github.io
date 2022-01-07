@@ -36,7 +36,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color:#344051;
     border: none;
     outline: none;
     background: transparent;
@@ -71,7 +71,7 @@
     line-height: 1;
 
     opacity: .75;
-    color: white;
+    color: #344051;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -160,7 +160,7 @@
 
     cursor: pointer;
 
-    color: transparent;
+    color: #344051;
     border: 0;
     outline: none;
     background: transparent;
@@ -180,10 +180,12 @@
     font-family: 'slick';
     font-size: 6px;
     line-height: 20px;
+    
 
     position: absolute;
     top: 0;
     left: 0;
+    
 
     width: 20px;
     height: 20px;
