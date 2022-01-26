@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="zxx">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -9,27 +8,40 @@
   <meta name="robots" content="all" />
 
   <meta name="og:title" content="Моя первая страница..." />
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-  <link rel="stylesheet" href="css/reset.css" />
+   ym(87145808, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/87145808" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+  <link rel="stylesheet" href="./css/reset.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/magnific-popup.css">
-  <link rel="stylesheet" href="css/style.css" />
-
-  <link rel="stylesheet" type="text/css" href="css/slick.css" />
-  <link rel="stylesheet" type="text/css" href="css/slick-theme.css" />
-
-
+  <link rel="stylesheet" href="./css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./css/slick-theme.css"/>
 
   <title>Шагушин Андрей - Веб-разработчик!</title>
 </head>
 
 <body>
 
-  <div class="loader">
+ <!-- <div class="loader">
     <div class="loader_inner"></div>
-  </div>
+  </div>-->
 
 
   <header>
@@ -81,15 +93,17 @@
             Я Андрей Шагушин
           </h1>
           <h4>Фулл стек Веб-разработчик</h4>
-          <input type="button" id="about_my_btn" value="Обо мне" />
-          <input type="button" id="my_work_my" value="Мои работы" />
+          <a href="#about_me">Обо мне</a>
+          <a href="#cases" onclick="ym(87145808,'reachGoal','cases'); return true;">Мои работы</a>
+          <!--<input type="button" id="about_my_btn" value="Обо мне" />
+          <input type="button" id="my_work_my" value="Мои работы" />-->
         </div>
       </div>
     </div>
   </div>
   <div class="about_me_container" id="about_me">
     <h2>Обо мне</h2>
-    <img src="img/chb_boy.png" alt="Тут должна быть фотка поменьше" />
+    <img src="img/chb_boy.jpeg" alt="Тут должна быть фотка поменьше" class="lazy" />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
       error asperiores temporibus quidem ea quo, maiores molestiae, deleniti
@@ -100,29 +114,29 @@
       eveniet?
     </p>
 
-    <input type="button" value="Скачать резюме" />
+    <a href="резюме.pdf" download type="button" value="Скачать резюме">Скачать резюме</a>
   </div>
 
   <div class="my_skill_container section" id="my_skill">
     <h2>Что я умею</h2>
     <div class="my_skill">
       <div class="web_design_container" style="display: inline-block">
-        <img src="img/my_skills/laptop.png" alt="Фото" />
+        <img src="img/my_skills/laptop.png" alt="Фото" class="lazy" />
         <h4>Веб-дизайн</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reprehenderit?</p>
       </div>
       <div class="Development_container" style="display: inline-block">
-        <img src="img/my_skills/developer.png" alt="Фото" />
+        <img src="img/my_skills/developer.png" alt="Фото"  class="lazy"/>
         <h4>Разработка</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, recusandae.</p>
       </div>
       <div class="seo_optimizer_container" style="display: inline-block">
-        <img src="img/my_skills/seo.png" alt="Фото" />
+        <img src="img/my_skills/seo.png" alt="Фото" class="lazy" />
         <h4>СЕО-оптимизация</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, excepturi.</p>
       </div>
       <div class="marketing_container" style="display: inline-block">
-        <img src="img/my_skills/marketing.png" alt="Фото" />
+        <img src="img/my_skills/marketing.png" alt="Фото" class="lazy" />
         <h4>Маркетинг</h4>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, perspiciatis.</p>
       </div>
@@ -153,16 +167,16 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/cases_photo1.1.png" class="d-block w-100 image-link" alt="1.1"
-                href="img/cases_photo1.1.png">
+              <img src="img/cases_photo1.1.avif" class="d-block w-100 image-link lazy" alt="1.1"
+                href="img/cases_photo1.1.avif">
             </div>
             <div class="carousel-item">
-              <img src="img/cases_photo1.2.png" class="d-block w-100 image-link" alt="1.2"
-                href="img/cases_photo1.2.png">
+              <img src="img/cases_photo1.2.avif" class="d-block w-100 image-link lazy" alt="1.2"
+                href="img/cases_photo1.2.avif">
             </div>
             <div class="carousel-item">
-              <img src="img/cases_photo1.3.png" class="d-block w-100 image-link" alt="1.3"
-                href="img/cases_photo1.3.png">
+              <img src="img/cases_photo1.3.avif" class="d-block w-100 image-link lazy" alt="1.3"
+                href="img/cases_photo1.3.avif">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -218,16 +232,16 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/cases_photo2.1.png" class="d-block w-100 image-link" alt="2.1"
-                href="img/cases_photo2.1.png">
+              <img src="img/cases_photo2.1.avif" class="d-block w-100 image-link lazy" alt="2.1"
+                href="img/cases_photo2.1.avif">
             </div>
             <div class="carousel-item">
-              <img src="img/cases_photo2.2.png" class="d-block w-100 image-link" alt="2.2"
-                href="img/cases_photo2.2.png">
+              <img src="img/cases_photo2.2.avif" class="d-block w-100 image-link lazy" alt="2.2"
+                href="img/cases_photo2.2.avif">
             </div>
             <div class="carousel-item">
-              <img src="img/cases_photo2.3.png" class="d-block w-100 image-link" alt="2.3"
-                href="img/cases_photo2.3.png">
+              <img src="img/cases_photo2.3.avif" class="d-block w-100 image-link lazy" alt="2.3"
+                href="img/cases_photo2.3.avif">
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators_1"
@@ -317,22 +331,62 @@
 
 
       <div class="happy_customers_container" style="display: inline-block">
-        <img src="img/statistics/smile.png" alt="Фото" />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+          <path fill-rule="evenodd"
+            d="M255,160 L256,160 C256,162.209139 254.209139,164 252,164 C249.790861,164 248,162.209139 248,160 L249,160 C249,161.656854 250.343146,163 252,163 C253.656854,163 255,161.656854 255,160 Z M252,168 C256.970563,168 261,163.970563 261,159 C261,154.029437 256.970563,150 252,150 C247.029437,150 243,154.029437 243,159 C243,163.970563 247.029437,168 252,168 Z M252,167 C256.418278,167 260,163.418278 260,159 C260,154.581722 256.418278,151 252,151 C247.581722,151 244,154.581722 244,159 C244,163.418278 247.581722,167 252,167 Z M249,158 C249.552285,158 250,157.552285 250,157 C250,156.447715 249.552285,156 249,156 C248.447715,156 248,156.447715 248,157 C248,157.552285 248.447715,158 249,158 Z M255,158 C255.552285,158 256,157.552285 256,157 C256,156.447715 255.552285,156 255,156 C254.447715,156 254,156.447715 254,157 C254,157.552285 254.447715,158 255,158 Z"
+            transform="translate(-243 -150)" />
+        </svg>
+
+
         <p class="spincrement">120</p>
         <h4>Счастливых клиентов</h4>
       </div>
       <div class="hour_work_container" style="display: inline-block">
-        <img src="img/statistics/dev.png" alt="Фото" />
+        <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M4.5 2C3.11929 2 2 3.11929 2 4.5V13.5C2 14.8807 3.11929 16 4.5 16H9.47466C9.58466 15.6385 9.75768 15.3 9.98502 15H4.5C3.67157 15 3 14.3284 3 13.5V5.99873H15V9.94266L15.102 9.84065C15.3683 9.5744 15.6738 9.37139 16 9.23163V4.5C16 3.11929 14.8807 2 13.5 2H4.5ZM2.99902 4.49878C2.99902 3.67035 3.6706 2.99878 4.49902 2.99878H13.499C14.3275 2.99878 14.999 3.67035 14.999 4.49878V4.99878H2.99902V4.49878ZM8.35227 7.1452C8.54753 7.34046 8.54753 7.65704 8.35227 7.8523L6.20583 9.99875L8.35227 12.1452C8.54753 12.3405 8.54753 12.657 8.35227 12.8523C8.15701 13.0476 7.84043 13.0476 7.64517 12.8523L5.14517 10.3523C4.9499 10.157 4.9499 9.84046 5.14516 9.6452L7.64516 7.1452C7.84043 6.94993 8.15701 6.94993 8.35227 7.1452ZM10.1464 12.1452C9.95118 12.3405 9.95119 12.6571 10.1464 12.8523C10.3417 13.0476 10.6583 13.0476 10.8536 12.8523L13.3536 10.3523C13.5488 10.1571 13.5488 9.84048 13.3536 9.64522L10.8536 7.14523C10.6583 6.94996 10.3417 6.94996 10.1464 7.14523C9.95119 7.34049 9.95119 7.65707 10.1464 7.85233L12.2929 9.99878L10.1464 12.1452ZM15.8092 10.5478L10.9798 15.3772C10.6982 15.6588 10.4984 16.0116 10.4018 16.3979L10.0274 17.8958C9.86451 18.5472 10.4546 19.1372 11.106 18.9744L12.6039 18.5999C12.9902 18.5033 13.343 18.3036 13.6246 18.022L18.454 13.1926C19.1843 12.4622 19.1843 11.2781 18.454 10.5478C17.7237 9.81741 16.5395 9.81741 15.8092 10.5478Z" />
+        </svg>
+
         <p class="spincrement">4600</p>
         <h4>Часов работы</h4>
       </div>
       <div class="projects_completed_container" style="display: inline-block">
-        <img src="img/statistics/completed.png" alt="Фото" />
+        <?xml version="1.0" ?><svg data-name="Layer 1" id="Layer_1" viewBox="0 0 64 64"
+          xmlns="http://www.w3.org/2000/svg">
+          <title />
+          <path class="cls-1"
+            d="M28.75,55.5a23.5,23.5,0,1,1,14-42.38,2,2,0,0,1-2.38,3.21A19.51,19.51,0,1,0,48.25,32,19.65,19.65,0,0,0,48,28.93a2,2,0,1,1,4-.62A23.85,23.85,0,0,1,52.25,32,23.52,23.52,0,0,1,28.75,55.5Z" />
+          <path class="cls-2"
+            d="M31.25,39.5a2,2,0,0,1-1.41-.59l-9.5-9.5a2,2,0,0,1,2.82-2.82l8.09,8.08L55.34,10.59a2,2,0,0,1,2.82,2.82l-25.5,25.5A2,2,0,0,1,31.25,39.5Z" />
+        </svg>
         <p class="spincrement">340</p>
         <h4>Проектов завершено</h4>
       </div>
       <div class="prize_container" style="display: inline-block">
-        <img src="img/statistics/cup.png" alt="Фото" />
+        <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 611.978 611.978" style="enable-background:new 0 0 611.978 611.978;" xml:space="preserve">
+	<path d="M611.907,131.704V85.418v-0.786c-1.571-16.214-12.357-27-27.786-28.571h-0.786h-92.571V35.204c0-14.643-12.357-27-27-27
+		H139.836c-14.643,0-27,12.357-27,27v20.857H28.764h-0.786C12.55,56.846,1.764,68.418,0.193,84.632v0.786v46.286
+		c-0.786,12.357-4.643,131.929,123.429,152c20.071,56.286,66.357,101.071,125,118v76.357l-101.857,48.571c0,0-0.786,0-0.786,0.786
+		c-14.643,8.5-22.357,20.857-22.357,34.714v15.429v0.786c1.571,15.429,12.357,25.429,28.571,25.429h300.071
+		c16.214,0,27.786-10,28.571-25.429v-0.786v-15.429c0-13.857-7.714-26.214-22.357-34.714l-0.786-0.786l-100.286-47.857v-77.786
+		c56.286-17,101.857-60.929,122.643-116.5c43.214-5.429,76.357-21.571,99.5-48.571C615.05,193.418,611.907,139.418,611.907,131.704z
+		 M115.907,253.632C21.05,231.275,27.979,138.704,28.764,134.061c0-0.786,0-0.786,0-1.571V86.204c0-0.786,0-1.571,0-1.571h0.786
+		h83.286v135.786c0,5.429,0,10,0.786,15.429c0,0.786,0,1.571,0,1.571C114.336,242.846,115.122,247.418,115.907,253.632
+		C115.907,252.846,115.907,252.846,115.907,253.632z M452.264,561.418v13.143l0,0H151.407l0,0v-13.143
+		c0-3.857,4.643-7.714,7.714-9.286l104.929-49.357h75.571l104.929,49.357C447.622,553.704,452.264,557.561,452.264,561.418z
+		 M328.05,409.418v64.786h-50.929v-64.786H328.05z M301.836,380.918c-72.5,0-133.429-47.857-153.5-113.429l0,0
+		c-0.786-3.857-2.286-7.714-3.071-11.571l0,0c-1.571-6.929-2.286-14.643-3.071-21.571c0-0.786,0-1.571,0-2.286
+		c0-3.857-0.786-6.929-0.786-10.786v-150.5V36.846H461.55v38.571v144.286c0,3.857,0,6.929-0.786,10.786c0,0.786,0,1.571,0,2.286
+		c0,3.071-0.786,6.929-0.786,10v0.786c-0.786,3.857-1.571,6.929-2.286,10.786c0,0.786,0,1.571-0.786,2.286
+		c-0.786,3.071-1.571,6.143-2.286,9.286C435.264,332.275,373.55,380.918,301.836,380.918z M557.193,218.132
+		c-16.214,19.286-39.357,31.643-69.429,37v-0.786c0.786-5.429,1.571-10,2.286-15.429c0-0.786,0-1.571,0-1.571
+		c0.786-5.429,0.786-10.786,0.786-16.214V84.704h91.786c0.786,0,0.786,0,0.786,0s0,0.786,0,1.571v46.286c0,0.786,0,0.786,0,1.571
+		C583.407,134.846,587.264,181.846,557.193,218.132z M272.479,313.775c-2.286,5.429-7.714,9.286-13.143,9.286
+		c-1.571,0-3.071,0-5.429-0.786c-47.071-17.714-57.071-60.143-56.286-79.429v-145c0-7.714,6.143-13.857,13.857-13.857
+		c7.714,0,13.857,6.143,13.857,13.857v145.786c0,2.286-1.571,37.786,37.786,52.429C271.764,298.346,275.622,306.846,272.479,313.775
+		z"/>
+</svg>
         <p class="spincrement">23</p>
         <h4>Наград получено</h4>
       </div>
@@ -341,7 +395,7 @@
 
   <div class="feedback_container section" id="feedback">
     <h2>Отзывы</h2>
-    <img src="img/fb_foto.png" alt="Тут должна быть фотка" />
+    <img src="img/fb_foto.jpg" alt="Тут должна быть фотка" class="lazy" />
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex optio cupiditate amet mollitia sequi asperiores.
       Doloremque quod accusantium neque quibusdam consectetur corrupti eius provident ut.
@@ -349,7 +403,7 @@
     <p><strong>Имя</strong>, компания</p>
   </div>
 
-  <div class="contacts_container section" id="contacts">
+  <form class="contacts_container section" id="contacts" action="php/mail.php" method="post">
     <h2>Мои контакты</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur,
@@ -357,80 +411,61 @@
     </p>
 
     <div class="my_cont">
+      <div class="my_email_container" style="display: inline-block">
+        <img src="img/my_contacts/email.png" alt="Фото" class="lazy" />
+        <a href="mailto:testemail@yandex.ru">testemail@yandex.ru</a>
+      </div>
       <div class="my_addres_container" style="display: inline-block">
-        <img src="img/my_contacts/geo.png" alt="Фото" />
+        <img src="img/my_contacts/geo.png" alt="Фото" class="lazy" />
         <p>Владимир, Владмирская, 36</p>
       </div>
-      <div class="my_email_container" style="display: inline-block">
-        <img src="img/my_contacts/email.png" alt="Фото" />
-        <p>testemail@yandex.ru</p>
-      </div>
       <div class="my_phone_container" style="display: inline-block">
-        <img src="img/my_contacts/phone.png" alt="Фото" />
-        <p>+7-999-888-77-66</p>
+        <img src="img/my_contacts/phone.png" alt="Фото" class="lazy" />
+        <a href="tel:+71234567891">+7(123)-456-78-91</a>
       </div>
     </div>
     <h4>Оставьте мне сообщение</h4>
     <div>
-      <input type="text" placeholder="Имя" required/>
-      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Имя" name="name" required />
+      <input type="email" placeholder="Email" name="email" required />
 
-      <textarea name="messages" id="messages" placeholder="Сообщение" required></textarea>
-     
+      <textarea id="messages" name="messages" placeholder="Сообщение" required></textarea>
+
     </div>
     <!-- Button trigger modal -->
-    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    <button type="submit" class="btn">
       Отправить
     </button>
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-      aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">Отправка обращения</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            Ваше письмо отправлено
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отменить</button>
-            <button type="button" class="btn btn-primary" data-bs-dismiss="modal" id="feedback_ok">Окей</button>
-          </div>
-        </div>
-      </div>
-    </div>
 
-
+    
+  
 
     <script src="https://yastatic.net/share2/share.js"></script>
     <div class="ya-share2" data-curtain data-size="l" data-shape="round"
       data-services="vkontakte,facebook,telegram,viber,whatsapp"></div>
-  </div>
 
-  <div class="maps section">
-    <script type="text/javascript" charset="utf-8" async
-      src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
-  </div>
+      <div class="maps section" id="yamap">
+        </div>
+  </form>
 
+  
+
+  
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
     integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
     crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
     crossorigin="anonymous"></script>
-    
+
   <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script src="js/jquery.magnific-popup.js"></script>
-  <script language="JavaScript" type="text/javascript" src="/js/jquery.spincrement.min.js"></script>
-  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
-  <script language="JavaScript" type="text/javascript" src="/js/script.js"></script>
-
-
-
+  <script src="./js/jquery.magnific-popup.js"></script>
+  <script language="JavaScript" type="text/javascript" src="./js/jquery.spincrement.min.js"></script>
+  <script src="./js/slick.js" type="text/javascript"></script>
+  <script language="JavaScript" type="text/javascript" src="./js/script.js"></script>
+  <script language="JavaScript" type="text/javascript" src="./js/lazyload.min.js"></script>
 
 </body>
 

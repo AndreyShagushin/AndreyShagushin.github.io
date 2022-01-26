@@ -1,52 +1,77 @@
-$(document).ready(function () {
-    $(".loader_inner").fadeOut();
-    $(".loader").fadeOut("slow");
+/*$(document).ready(function () {*/
+/* $(".loader_inner").fadeOut();
+ $(".loader").fadeOut("slow");*/
 
+$(window).scroll(() => {
+    let scrollDistanse = $(window).scrollTop();
+    $(".section").each((i, el) => {
+        if ($(el).offset().top - ($("nav").outerHeight()) <= scrollDistanse) {
 
-
-    $(window).scroll(() => {
-        let scrollDistanse = $(window).scrollTop();
-        $(".section").each((i, el) => {
-            if ($(el).offset().top - ($("nav").outerHeight()) <= scrollDistanse) {
-
-                $("nav a").each((i, el) => {
-                    if ($(el).hasClass("active_menu")) {
-                        $(el).removeClass("active_menu");
-                    }
-                });
-                $("nav li:eq(" + i + ")").find('a').addClass("active_menu");
-            }
-        });
-
-        if (scrollDistanse < ($(".main").outerHeight() - $("nav").outerHeight())) {
             $("nav a").each((i, el) => {
                 if ($(el).hasClass("active_menu")) {
                     $(el).removeClass("active_menu");
                 }
             });
+            $("nav li:eq(" + i + ")").find('a').addClass("active_menu");
         }
     });
 
-    
-    
-
-    let option = {
-        threshold: 1.0
+    if (scrollDistanse < ($(".main").outerHeight() - $("nav").outerHeight())) {
+        $("nav a").each((i, el) => {
+            if ($(el).hasClass("active_menu")) {
+                $(el).removeClass("active_menu");
+            }
+        });
     }
-    let observer = new IntersectionObserver(onEntry, option);
-    let elemetn = $(".my_statictic");
-    elemetn.each((i, el) => {
-        observer.observe(el);
-    });
-    $('.image-link').magnificPopup({ type: 'image' });
-
-
-    $('.clients').slick({
-      });
-
-    
-
 });
+
+
+
+
+let option = {
+    threshold: 0.5
+}
+let observer = new IntersectionObserver(onEntry, option);
+let elemetn = $(".my_statictic");
+elemetn.each((i, el) => {
+    observer.observe(el);
+});
+$('.image-link').magnificPopup({ type: 'image' });
+
+
+$('.clients').slick({
+});
+
+$("form").submit(function (event) {
+    event.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "./php/mail.php",
+        data: $(this).serialize()
+    }).done(function () {
+        $('form').find("input").val("")
+        alert("Успешно отправлено!");
+        $('form').trigger("reset");
+    });
+    return false;
+});
+
+
+let ok = false;      
+console.log("1");              
+window.addEventListener('scroll', function() {
+    if (ok === false) {
+        ok = true;    
+        setTimeout(() => {                        
+            let script = document.createElement('script');
+            script.src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3f4d17fc679ee2b5009b98f023fd378f020f8a16f08332e1de39c4aec3cd56fc&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false";
+            document.getElementById('yamap').replaceWith(script);                        
+        }, 1000)    
+    }
+});
+
+
+/*});*/
 
 function onEntry(entry) {
     entry.forEach(element => {
@@ -161,15 +186,9 @@ document.getElementById("deadlines_site").addEventListener('change', function (e
     // document.getElementById("deadlines_id").appendChild(txt);// design_site_options[e.target.value][1];
 });
 
-document.getElementById("feedback_ok").addEventListener("click", ()=> {
-    alert("Ваше письмо отправлено");
-});
 
-$('.menu li a').on('click', ()=>{
-    if($('.navbar-collapse').hasClass("show")){
+$('.menu li a').on('click', () => {
+    if ($('.navbar-collapse').hasClass("show")) {
         $('.navbar-collapse').removeClass("show");
     }
 });
-
-
-
